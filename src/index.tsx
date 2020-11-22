@@ -10,6 +10,7 @@ import Navbar from './components/nav/Navbar';
 import'bootswatch/dist/lux/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
+import Footer from './components/Footer/Footer';
 
 
 
@@ -18,7 +19,6 @@ ReactDOM.render(
     <BrowserRouter>
     
     <Navbar/>
-
       <div className="container p-4">
         <Switch>
           <Route exact path="/" component={Home}/>
@@ -27,7 +27,9 @@ ReactDOM.render(
         </Switch>
         <ToastContainer/>
       </div>
+      <Footer/>
     </BrowserRouter>
+    
   </React.StrictMode>,
   document.getElementById('root')
 );
